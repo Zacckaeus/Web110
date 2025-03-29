@@ -1,0 +1,29 @@
+header{
+    height: 10em;
+    background-image: url(disneyHeader.Jpg);
+    background-position: 100% 45%;
+    background-size: cover;
+
+}
+h1{
+    padding: 1em 0;
+    padding-left: 10px;
+    color: white;
+}
+main{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+ul{
+    display: inline-block;
+    text-align: left;
+}
+ol{
+    display: inline-block;
+    text-align: left;
+}
