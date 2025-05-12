@@ -1,0 +1,66 @@
+header{
+    height: 10em;
+}
+h1{
+    padding: 1em 0;
+    padding-left: 10px;
+    color: white;
+}
+main{
+    text-align: center;
+    background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #000;
+        max-width: 95%;
+        margin: 0 auto;
+}
+footer{
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+ul{
+    display: inline-block;
+    text-align: left;
+}
+ol{
+    display: inline-block;
+    text-align: left;
+}
+.page1{
+    background-image: url(mcuHeader.webp);
+    background-position: 100% 39%;
+    background-size: cover;
+}
+.page2{
+    background-image: url(disneyHeader.Jpg);
+    background-position: 100% 45%;
+    background-size: cover;
+}
+.page3 {
+    background-image: url(opinionheader.jpeg);
+    background-position: 100% 50%;
+    background-size: cover;
+}
+.page4 {
+    background-image: url(marvel.webp);
+    background-position: 100% 50%;
+    background-size: cover;
+}
+.page5 {
+    background-image: url(rivalsheader.png);
+    background-position: 100% 35%;
+    background-size: cover;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+.title {
+    grid-column: 1 / span 3
+}

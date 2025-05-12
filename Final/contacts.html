@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #000;
+        max-width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+            }
+    header{
+        height: 10em;
+        background-image: url(revisionheader.jpg);
+        background-position: 100% 39%;
+        background-size: cover;
+    }
+    h1{
+        padding: 1em 0;
+        padding-left: 10px;
+        color: white;
+    }
+    main{
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    footer{
+        text-align: center;
+    }
+    nav{
+        text-align: center;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+    ul{
+        display: inline-block;
+        text-align: left;
+    }
+    ol{
+        display: inline-block;
+        text-align: left;
+    }
+    input[type="text"],input[type="email"],input[type="tel"],input[type="date"],textarea,select {
+        width: 50%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        min-height: 80px;
+    }
+    </style>
+</head>
+<body>
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <main class="container">
+            <p>If you have an issue or correction with our site please submit below!</p>
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+            <label for="firstName">Name:</label>
+            <input type="text" id="firstName" name="firstName" required minlength="2" maxlength="30">
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"  placeholder="123-456-7890">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="pages">Which Page was the issue on?:</label>
+            <select id="pages" name="pages">
+                <option value="home">Home</option>
+                <option value="other-shows">Other Shows</option>
+                <option value="opinion">Where the MCU Should Go</option>
+                <option value="nonMCU">NonMCU</option>
+            </select>
+
+            <label for="learnMore">What was the issue?</label>
+            <textarea id="learnMore" name="learnMore" maxlength="500"></textarea>
+
+            <label for="when">When you discovered the issue: </label>
+            <input type="date" name="when">
+
+            <input type="checkbox" id="wantspam" name="newsletter" value ='notification'>
+            <label for="wantspam">Check to sign up for Email Notifications</label>
+
+          <label>How would you prefer we contact you?</label>
+            <input type="radio" id="contactEmail" name="contactPreference" value="email" required>
+            <label for="contactEmail">Email</label>
+            <input type="radio" id="contactPhone" name="contactPreference" value="phone">
+            <label for="contactPhone">Phone</label>
+            <input type="radio" id="noPreference" name="contactPreference" value="no_preference">
+            <label for="noPreference">No Preference</label>
+            <input type="submit" value ='Submit'>
+          <input type="reset" value ='Reset'>
+        </form>
+
+        </main>
+        <nav>
+      <ul>
+          <li><a href="home.html"> Home</a>
+          <li><a href="tvShow.html"> Other Shows</a>
+          <li><a href="https://www.disneyplus.com"> Watch It All!</a></li>
+          <li><a href="opinion.html"> Where The MCU Should Go</a>
+          <li><a href="nonMCU.html"> Outside the MCU</a>
+    </nav>
+    <footer>
+      <p>Zack Knust &copy; 2025</p>
+    </footer>
+</body>
+</html>
